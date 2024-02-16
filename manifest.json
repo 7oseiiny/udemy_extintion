@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "udemy hoseiny 01069735454",
+  "version": "0.1.0",
+  "description": "This extension make video full width",
+  "browser_action": {
+    "default_popup": "index.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.udemy.com/*"
+      ],
+      "js": [
+        "index.js"
+      ],
+      "css": [
+        "styles.css"
+      ] // Add this line to include your CSS file
+    }
+  ],
+  "background": {
+    "scripts": [
+      "backgroung.js"
+    ]
+  }
+}
